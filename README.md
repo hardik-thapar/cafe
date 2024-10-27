@@ -2,7 +2,7 @@
 
 Welcome to **Cafe**, a delightful web application that helps you explore and manage your favorite coffee recipes! Whether you're a coffee enthusiast or just starting your journey into the world of coffee, this app is designed for you.
 
-![Cafe Logo]() <!-- Replace with your logo URL -->
+![Cafe Logo](https://github.com/hardik-thapar/cafe/blob/main/images/l.png) <!-- Replace with your logo URL -->
 
 ## 📦 Features
 
