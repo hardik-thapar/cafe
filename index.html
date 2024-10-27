@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Harvest - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .stars {
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+        .story-image{
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .faq-section {
+            background-color: var(--light-color);
+            padding: 4rem 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '\25BC';
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            color: var(--dark-color);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/l.png" alt="Cafe Harvest Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                
+                <a href="cart.html" id="cart-icon">🛒<span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 style="font-family: Verdana; color:rgb(73, 44, 3)">Welcome to Cafe Harvest</h1>
+                <p style="color:rgb(55, 53, 53)">Experience the finest coffee and delightful treats in a cozy atmosphere</p>
+                <a href="menu.html" class="cta-button">Explore Our Menu</a>
+            </div>
+        </section>
+        <hr style="color:rgb(73, 44, 3)">
+
+        <section id="reviews">
+            <div class="container">
+                <h2 style="font-family: Verdana; color:rgb(73, 44, 3)">Our Rating</h2>
+                <div class="rating-container">
+                    <div class="stars">
+                        <i class="fa-solid fa-star fa-sm" style="color: #ff6a00;"></i>
+                        <i class="fa-solid fa-star fa-sm" style="color: #ff6a00;"></i>
+                        <i class="fa-solid fa-star fa-sm" style="color: #ff6a00;"></i>
+                        <i class="fa-solid fa-star fa-sm" style="color: #ff6a00;"></i>
+                        <i class="fa-solid fa-star-half fa-sm" style="color: #ff6a00;"></i>
+                    </div>
+                    <p class="rating-text">4.0 stars out of 5</p>
+                    <p class="award-text"><u>Best Cafe 2023</u> Award by Times of India</p>
+                </div>
+            </div>
+        </section>
+        <hr style="color:rgb(73, 44, 3)">
+
+        <section id="our-story">
+            <div class="container">
+                <h2 style="font-family: Verdana; color:rgb(73, 44, 3)">Our Story</h2>
+                <div class="story-content">
+                    <img class="story-image" src="images/interior.png" alt="Cafe Harvest Interior">
+                    <p style="font-family: Arial, Helvetica, sans-serif; color:rgb(51, 21, 1); font-size: 1.6rem;">Cafe Harvest was born from a passion for quality coffee and a desire to create a warm, welcoming space for our community. Since our founding in 2024, we've been committed to sourcing the finest beans and crafting delicious beverages and treats for our valued customers.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="color:rgb(73, 44, 3)">
+
+        <!-- Updated FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 style="font-family: Verdana; color:rgb(73, 44, 3); text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <p class="faq-question">What are your operating hours?</p>
+                        <div class="faq-answer">
+                            <p>We are open Monday to Friday from 7am to 8pm, and on weekends (Saturday and Sunday) from 8am to 9pm.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Where are you located?</p>
+                        <div class="faq-answer">
+                            <p>Our cafe is located in Sector 7, Chandigarh. We're easily accessible and have ample parking space available.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Do you offer vegetarian and vegan options?</p>
+                        <div class="faq-answer">
+                            <p>Yes, we have a wide range of vegetarian options and several vegan choices on our menu. Our staff will be happy to assist you with dietary requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Can I book the cafe for private events?</p>
+                        <div class="faq-answer">
+                            <p>Absolutely! We offer private event bookings for special occasions. Please contact us at info@cafeharvest.com or call +91 9876543210 for more information and availability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <hr style="color:rgb(73, 44, 3)">
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Sector 7, Chandigarh</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Email: info@cafeharvest.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="hours">
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 7am - 8pm</p>
+                    <p>Sat-Sun: 8am - 9pm</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Cafe Harvest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isOpen = question.classList.contains('active');
+                    
+                    // Close all other answers
+                    faqQuestions.forEach(q => {
+                        if (q !== question) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+                    
+                    // Toggle the clicked question
+                    if (!isOpen) {
+                        question.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        question.classList.remove('active');
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
