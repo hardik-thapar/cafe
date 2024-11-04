@@ -90,7 +90,7 @@ function calculateSubtotal() {
 
 function updateCartSummary() {
     const subtotal = calculateSubtotal();
-    const gst = subtotal * 0.12;
+    const gst = subtotal * 0.05;
     const total = subtotal + gst;
 
     const subtotalElement = document.getElementById('subtotal');
