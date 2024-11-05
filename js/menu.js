@@ -40,7 +40,7 @@ function renderMenuItems(category = 'all') {
         menuItemsContainer.appendChild(menuItem);
     });
 
-    // Add event listeners to all "Add to Cart" buttons
+    // ADD TO CART BUTTON
     const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function() {
