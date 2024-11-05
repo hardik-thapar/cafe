@@ -90,7 +90,7 @@ function calculateSubtotal() {
 
 function updateCartSummary() {
     const subtotal = calculateSubtotal();
-    const gst = subtotal * 0.05;
+    const gst = subtotal * 0.12;
     const total = subtotal + gst;
 
     const subtotalElement = document.getElementById('subtotal');
@@ -132,9 +132,19 @@ function checkout() {
         alert('Please enter a valid 10-digit contact number.');
         return;
     }
+    const user_name = document.getElementById('customer-name').value;
+    if (!user_name) {
+        alert('Please enter a name before checking out.');
+        return;
+    }
+    const table_no = document.getElementById('table').value;
+    if (!contactNumber) {
+        alert('Please enter a Table number.');
+        return;
+    }
 
     // Perform checkout logic here
-    alert(`Thank you for your order! We'll contact you at ${contactNumber} if needed.`);
+    alert(`Hey ${user_name}, your order will be served soon at table no: ${table_no}. For any queries we'll contact you at ${contactNumber} if needed.`);
     clearCart();
 }
 
