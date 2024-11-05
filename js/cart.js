@@ -109,7 +109,7 @@ function updateCartSummary() {
 function clearCart() {
     cart = [];
     localStorage.setItem('cart', JSON.stringify(cart));
-    renderCart(); // Changed from renderCartItems to renderCart
+    renderCart(); 
     updateCartSummary();
     updateCartCount();
 }
@@ -119,15 +119,15 @@ function checkout() {
         alert('Your cart is empty. Add some items before checking out.');
         return;
     }
-
+// CONTACT
     const contactNumber = document.getElementById('contact-number').value;
     if (!contactNumber) {
         alert('Please enter a contact number before checking out.');
         return;
     }
 
-    // Validate the contact number (you can adjust the regex pattern as needed)
-    const phoneRegex = /^\d{10}$/;  // Assumes a 10-digit phone number
+    
+    const phoneRegex = /^\d{10}$/;  
     if (!phoneRegex.test(contactNumber)) {
         alert('Please enter a valid 10-digit contact number.');
         return;
@@ -143,7 +143,7 @@ function checkout() {
         return;
     }
 
-    // Perform checkout logic here
+    //checkout
     alert(`Hey ${user_name}, your order will be served soon at table no: ${table_no}. For any queries we'll contact you at ${contactNumber} if needed.`);
     clearCart();
 }
@@ -151,7 +151,7 @@ function checkout() {
 document.addEventListener('DOMContentLoaded', () => {
     loadCart();
     renderCart();
-    updateCartSummary(); // Add this line to update the summary on page load
+    updateCartSummary(); 
 
     const checkoutBtn = document.getElementById('checkout-btn');
     if (checkoutBtn) {
